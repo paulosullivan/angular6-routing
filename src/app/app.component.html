@@ -1,0 +1,13 @@
+<h1>My App</h1>
+<!-- These links will result in a full browser refresh -->
+<p>Refresh Page</p>
+<p><a href="/home">Home</a></p>
+<p><a href="/settings">Settings</a></p>
+<!-- Reload DOM -->
+<p>Reload DOM</p>
+<p><a routerLink="home">Home</a></p>
+<p><a routerLink="/settings">Settings</a></p>
+<!-- Dynamic Nav -->
+<p>Reload DOM - Dynamic Nav</p>
+<p><a *ngFor="let link of links" [routerLink]="link.url">{{link.linkName}}</a></p>
+<router-outlet></router-outlet>
